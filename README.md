@@ -1,37 +1,49 @@
 ##Cylon Ollie
+=============
 
-install cylon bluetooth low energy module
+Install 'cylon bluetooth low energy' module
+
   `npm i -g cylon-ble`
 
 make sure it builds correctly..
 check for any errors, I had build errors
 
 I had to:
+
   `sudo apt-get install libudev1 libudev-dev`
 
-then install cylon-ble globally:
-  `npm i -g cylon-ble again`
+Then install cylon-ble globally again:
 
-###setting permissions to access bluetooth w/out sudo
-creates var equal to path to node: ( $ is variable in bash )
+  `npm i -g cylon-ble`
+
+###Setting permissions to access bluetooth w/out sudo
+Creates variable equal to path to node: ( $ is variable in bash )
+
   `whichNode=$(eval readlink -f `which node`)`
 
-displays path to node installation:
+Displays path to node installation:
+
 `echo $whichNode`
 
 `sudo setcap cap_net_raw+eip $whichNode`
 
-try scan for bluetooth devices..
+Try scan for bluetooth devices..
+
   `cylon-ble-scan`
 
-create a new npm project with a name which isn't cylon  
+Create a new npm project with a name which isn't cylon  
+
   `npm init` ( inside a folder )
 
-install cylon, cylon-ble (cylon bluetooth-low-energy) & cylon-sphero-ble (module for talking to sphero w/ cylon)
+Install cylon, cylon-ble (cylon bluetooth-low-energy) & cylon-sphero-ble (module for talking to sphero w/ cylon)
+
   `npm i --save cylon cylon-ble cylon-sphero-ble`
 
-create an index.js (or any file name you like)
-copy/paste code from the 'how to use' section at https://cylonjs.com/documentation/drivers/ollie/
+Create an index.js (or any file name you like)
+Copy/paste code from the 'how to use' section at https://cylonjs.com/documentation/drivers/ollie/
 
-to run:
+Replace uuid number in connections section with the uuid of your device.
+
+To run:
+
   `node index.js` in terminal
