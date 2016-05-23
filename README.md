@@ -1,4 +1,4 @@
-##Cylon Ollie
+Cylon Ollie
 =============
 
 Install 'cylon bluetooth low energy' module
