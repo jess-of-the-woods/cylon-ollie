@@ -9,7 +9,7 @@ Cylon.robot({
     ollie: { driver: 'ollie', module: 'cylon-sphero-ble' }
   },
   work: function(my) {
-    console.log('my: ', my)
+    // console.log('my: ', my)
     // make `process.stdin` begin emitting "keypress" events
     keypress(process.stdin);
 
