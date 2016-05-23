@@ -28,11 +28,15 @@ Cylon.robot({
       my.ollie.roll(70, 0);
     });
 
-    after(4300, function(){
+    after(4600, function(){
+      my.ollie.roll(70, 20)
+    })
+
+    after(6300, function(){
       my.ollie.roll(80, 180)
     })
 
-    after(7300, function() {
+    after(8300, function() {
       my.ollie.stop();
     });
   }

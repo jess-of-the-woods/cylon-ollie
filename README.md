@@ -1,4 +1,4 @@
-Cylon Ollie
+##Cylon Ollie
 
 run
   `npm i -g cylon-ble`
@@ -12,7 +12,7 @@ I had to:
 then install cylon-ble globally:
   `npm i -g cylon-ble again`
 
-#setting permissions to access bluetooth w/out sudo
+##setting permissions to access bluetooth w/out sudo
 creates var equal to path to node: ( $ is variable in bash )
   `whichNode=$(eval readlink -f `which node`)`
 
