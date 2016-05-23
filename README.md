@@ -1,10 +1,10 @@
 ##Cylon Ollie
 
-run
+install cylon bluetooth low energy module
   `npm i -g cylon-ble`
 
 make sure it builds correctly..
-check for any errors.. I had build errors
+check for any errors, I had build errors
 
 I had to:
   `sudo apt-get install libudev1 libudev-dev`
@@ -12,7 +12,7 @@ I had to:
 then install cylon-ble globally:
   `npm i -g cylon-ble again`
 
-##setting permissions to access bluetooth w/out sudo
+###setting permissions to access bluetooth w/out sudo
 creates var equal to path to node: ( $ is variable in bash )
   `whichNode=$(eval readlink -f `which node`)`
 
