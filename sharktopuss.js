@@ -10,6 +10,7 @@ Cylon.robot({
   },
 
   work: function(my) {
+    console.log('my', my)
     my.ollie.color(0x00FFFF);
 
     my.ollie.setHeading (0, function(){
