@@ -46,4 +46,6 @@ Replace uuid number in connections section with the uuid of your device.
 
 To run:
 
-  `node index.js` in terminal
+  `node index.js`
+
+in terminal
