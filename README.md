@@ -1,5 +1,4 @@
-Cylon Ollie
-=============
+## Cylon.js Ollie Setup
 
 Install 'cylon bluetooth low energy' module
 
@@ -16,12 +15,13 @@ Then install cylon-ble globally again:
 
   `npm i -g cylon-ble`
 
-###Setting permissions to access bluetooth w/out sudo
-Creates variable equal to path to node: ( $ is variable in bash )
+### Setting permissions to access bluetooth w/out sudo
+
+Create variable equal to path to node: ( `$` is variable in BASH )
 
   `whichNode=$(eval readlink -f `which node`)`
 
-Displays path to node installation:
+Display path to node installation:
 
 `echo $whichNode`
 
@@ -39,13 +39,14 @@ Install cylon, cylon-ble (cylon bluetooth-low-energy) & cylon-sphero-ble (module
 
   `npm i --save cylon cylon-ble cylon-sphero-ble`
 
-Create an index.js (or any file name you like)
+Create an index.js (or any file name you like).
+
 Copy/paste code from the 'how to use' section at https://cylonjs.com/documentation/drivers/ollie/
 
-Replace uuid number in connections section with the uuid of your device.
+Replace UUID number in connections section with the UUID of your device.
 
-To run:
+Run in terminal with `node index.js`
 
-  `node index.js`
+---
 
-in terminal
+<img src='compass.jpg' height='250' width='250'>
